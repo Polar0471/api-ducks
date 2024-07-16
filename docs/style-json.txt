@@ -1,0 +1,18 @@
+{
+    "id": 1,
+    "name": "Donald Duck",
+    "species": "Mallard",
+    "age": 5,
+    "habitat": "Pond",
+    "description": "Donald is a cheerful mallard who loves to swim and quack loudly. He has vibrant feathers and is known for his social skills.",
+    "image": "https://example.com/images/donald-duck.jpg",
+    "statistics": {
+        "Overall": 88,
+        "SwimmingSpeed": 75,
+        "FlyingSpeed": 80,
+        "QuackingLoudness": 90,
+        "FeatherQuality": 85,
+        "EggLayingFrequency": 60,
+        "SocialSkills": 70
+    }
+}
