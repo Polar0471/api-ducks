@@ -1,5 +1,5 @@
 import express from "express"
-import { getDucks } from "./controllers/ducks-controllers"
+import router from "./routes"
 
 function createApp() {
 
@@ -7,7 +7,7 @@ function createApp() {
     
     app.use(express.json())
 
-    app.get("/", getDucks)
+    app.use("/api", router)
 
     return app
 
