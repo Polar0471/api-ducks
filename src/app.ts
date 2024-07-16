@@ -1,14 +1,13 @@
-import express, { Request, Response } from "express"
+import express from "express"
+import { getDucks } from "./controllers/ducks-controllers"
 
 function createApp() {
 
     const app = express()
-
+    
     app.use(express.json())
 
-    app.get("/", (request: Request, response: Response) => {
-        response.status(200).json({duck: "Mellard"})
-    })
+    app.get("/", getDucks)
 
     return app
 
