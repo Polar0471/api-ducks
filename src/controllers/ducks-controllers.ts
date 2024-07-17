@@ -1,5 +1,7 @@
-import { Request, Response } from "express";
+import { Request, Response } from "express"
+import { getDucksService } from "../services/duck-services"
 
-export const getDucks = (request: Request, response: Response) => {
-    response.status(200).json({duck: "Mellard"})
+export const getDucks = async (request: Request, response: Response) => {
+    const data = await getDucksService()
+    response.status(200).json(data)
 }
