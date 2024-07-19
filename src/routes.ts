@@ -1,8 +1,8 @@
-import { Router } from "express"
-import { getDucks } from "./controllers/ducks-controllers"
+import { Router } from "express";
+import { getDucks } from "./controllers/ducks-controllers";
 
-const router = Router()
+const router = Router();
 
-router.get("/ducks", getDucks)
+router.get("/ducks", getDucks);
 
-export default router
+export default router;
