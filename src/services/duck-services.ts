@@ -1,4 +1,4 @@
-import { findAllDucks } from "../repositories/ducks-repository";
+import { findAllDucks, findDuckById } from "../repositories/ducks-repository";
 import { noContent, ok } from "../utils/http-helper";
 
 export const getDucksService = async () => {
@@ -13,3 +13,16 @@ export const getDucksService = async () => {
 
   return response;
 };
+
+export const getDuckByIdService = async (id: number) => {
+  const data = await findDuckById(id)
+  let response = null
+
+  if (data) {
+    response = await ok(data)
+  } else {
+    response = noContent()
+  }
+
+  return response
+}
