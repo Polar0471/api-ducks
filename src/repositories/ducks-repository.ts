@@ -20,3 +20,12 @@ export const createDuck = async (newDuck: Duck) => {
   ducks.push(newDuck)
   await fs.writeFile("src/data/ducks.json", JSON.stringify(ducks, null, 2))
 }
+
+export const deleteDuck = async (id:number) => {
+  const data = await fs.readFile("src/data/ducks.json", "utf-8")
+  const ducks: Duck[] = JSON.parse(data)
+  
+  const updatedDucks = ducks.filter(duck => duck.id !== id)
+
+  await fs.writeFile("src/data/ducks.json", JSON.stringify(updatedDucks, null, 2))
+}

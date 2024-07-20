@@ -1,6 +1,7 @@
 import { Request, Response } from "express";
 import {
   createDuckService,
+  deleteDuckService,
   getDuckByIdService,
   getDucksService,
 } from "../services/duck-services";
@@ -27,4 +28,10 @@ export const postDuck = async (req: Request, res: Response) => {
     const response = await noContent();
     res.status(response.statusCode).json(response.body);
   }
+};
+
+export const deleteDuck = async (req: Request, res: Response) => {
+  const id = parseInt(req.params.id);
+  const httpResponse = await deleteDuckService(id);
+  res.status(httpResponse.statusCode).json(httpResponse.body);
 };

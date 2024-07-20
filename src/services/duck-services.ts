@@ -1,6 +1,7 @@
 import Duck from "../models/duck-model";
 import {
   createDuck,
+  deleteDuck,
   findAllDucks,
   findDuckById,
 } from "../repositories/ducks-repository";
@@ -44,3 +45,10 @@ export const createDuckService = async (newDuck: Duck) => {
 
   return response;
 };
+
+export const deleteDuckService = async (id: number) => {
+  let response = null 
+  await deleteDuck(id)
+  response = ok({message: "deleted"})
+  return response
+}
