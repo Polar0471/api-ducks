@@ -13,3 +13,10 @@ export const findDuckById = async (id: number): Promise<Duck | undefined> => {
   const duck = ducks.find(duck => duck.id === id)
   return duck
 };
+
+export const createDuck = async (newDuck: Duck) => {
+  const data = await fs.readFile("src/data/ducks.json", "utf-8")
+  const ducks: Duck[] = JSON.parse(data)
+  ducks.push(newDuck)
+  await fs.writeFile("src/data/ducks.json", JSON.stringify(ducks, null, 2))
+}

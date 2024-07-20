@@ -1,5 +1,10 @@
-import { findAllDucks, findDuckById } from "../repositories/ducks-repository";
-import { noContent, ok } from "../utils/http-helper";
+import Duck from "../models/duck-model";
+import {
+  createDuck,
+  findAllDucks,
+  findDuckById,
+} from "../repositories/ducks-repository";
+import { badRequest, created, noContent, ok } from "../utils/http-helper";
 
 export const getDucksService = async () => {
   const data = await findAllDucks();
@@ -15,14 +20,27 @@ export const getDucksService = async () => {
 };
 
 export const getDuckByIdService = async (id: number) => {
-  const data = await findDuckById(id)
-  let response = null
+  const data = await findDuckById(id);
+  let response = null;
 
   if (data) {
-    response = await ok(data)
+    response = await ok(data);
   } else {
-    response = noContent()
+    response = noContent();
   }
 
-  return response
-}
+  return response;
+};
+
+export const createDuckService = async (newDuck: Duck) => {
+  let response = null;
+
+  if (Object.keys(newDuck).length !== 0) {
+    await createDuck(newDuck);
+    response = await created();
+  } else {
+    response = await badRequest();
+  }
+
+  return response;
+};

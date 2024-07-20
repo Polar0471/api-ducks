@@ -1,79 +1,117 @@
 [
-    {
-      "id": 1,
-      "common_name": "Mallard",
-      "scientific_name": "Anas platyrhynchos",
-      "family": "Anatidae",
-      "habitat": {
-        "type": "Freshwater",
-        "description": "Lakes, rivers, marshes, and wetlands",
-        "preferences": [
-          "Areas with aquatic vegetation",
-          "River banks"
-        ]
-      },
-      "characteristics": {
-        "size": "Medium",
-        "plumage": "Colorful, predominance of green and brown tones",
-        "behavior": "Generally sociable, forms groups in winter"
-      },
-      "description": "The mallard is one of the most recognizable species of ducks, known for its vibrant plumage and distinctive quack. It is common in lakes and rivers across many parts of the world.",
-      "conservation_status": {
-        "level": "Least Concern",
-        "global_status": "LC",
-        "regional_status": "Stable"
-      },
-      "image_url": "https://example.com/image/mallard.jpg",
-      "references": [
-        {
-          "title": "Field Guide to Birds of North America",
-          "author": "John Doe",
-          "year": 2020,
-          "publisher": "American Birding Association"
-        },
-        {
-          "title": "IUCN Red List",
-          "link": "https://www.iucnredlist.org/species/22679903/115934519",
-          "access_date": "2024-07-17"
-        }
+  {
+    "id": 1,
+    "common_name": "Mallard",
+    "scientific_name": "Anas platyrhynchos",
+    "family": "Anatidae",
+    "habitat": {
+      "type": "Freshwater",
+      "description": "Lakes, rivers, marshes, and wetlands",
+      "preferences": [
+        "Areas with aquatic vegetation",
+        "River banks"
       ]
     },
-    {
-      "id": 2,
-      "common_name": "Northern Pintail",
-      "scientific_name": "Anas acuta",
-      "family": "Anatidae",
-      "habitat": {
-        "type": "Wetlands",
-        "description": "Marshes, ponds, shallow lakes",
-        "preferences": [
-          "Open water with dense emergent vegetation"
-        ]
+    "characteristics": {
+      "size": "Medium",
+      "plumage": "Colorful, predominance of green and brown tones",
+      "behavior": "Generally sociable, forms groups in winter"
+    },
+    "description": "The mallard is one of the most recognizable species of ducks, known for its vibrant plumage and distinctive quack. It is common in lakes and rivers across many parts of the world.",
+    "conservation_status": {
+      "level": "Least Concern",
+      "global_status": "LC",
+      "regional_status": "Stable"
+    },
+    "image_url": "https://example.com/image/mallard.jpg",
+    "references": [
+      {
+        "title": "Field Guide to Birds of North America",
+        "author": "John Doe",
+        "year": 2020,
+        "publisher": "American Birding Association"
       },
-      "characteristics": {
-        "size": "Medium-Large",
-        "plumage": "Long, pointed tail feathers; male with distinctive chocolate-brown head"
-      },
-      "description": "The northern pintail is a widespread duck known for its elegant appearance and long, slender neck. It inhabits various wetland habitats and is known for its long-distance migration.",
-      "conservation_status": {
-        "level": "Least Concern",
-        "global_status": "LC",
-        "regional_status": "Stable"
-      },
-      "image_url": "https://example.com/image/northern-pintail.jpg",
-      "references": [
-        {
-          "title": "Birds of North America",
-          "author": "Jane Smith",
-          "year": 2018,
-          "publisher": "National Audubon Society"
-        },
-        {
-          "title": "IUCN Red List",
-          "link": "https://www.iucnredlist.org/species/22679908/115934527",
-          "access_date": "2024-07-17"
-        }
+      {
+        "title": "IUCN Red List",
+        "link": "https://www.iucnredlist.org/species/22679903/115934519",
+        "access_date": "2024-07-17"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "common_name": "Northern Pintail",
+    "scientific_name": "Anas acuta",
+    "family": "Anatidae",
+    "habitat": {
+      "type": "Wetlands",
+      "description": "Marshes, ponds, shallow lakes",
+      "preferences": [
+        "Open water with dense emergent vegetation"
       ]
-    }
-  ]
-  
+    },
+    "characteristics": {
+      "size": "Medium-Large",
+      "plumage": "Long, pointed tail feathers; male with distinctive chocolate-brown head"
+    },
+    "description": "The northern pintail is a widespread duck known for its elegant appearance and long, slender neck. It inhabits various wetland habitats and is known for its long-distance migration.",
+    "conservation_status": {
+      "level": "Least Concern",
+      "global_status": "LC",
+      "regional_status": "Stable"
+    },
+    "image_url": "https://example.com/image/northern-pintail.jpg",
+    "references": [
+      {
+        "title": "Birds of North America",
+        "author": "Jane Smith",
+        "year": 2018,
+        "publisher": "National Audubon Society"
+      },
+      {
+        "title": "IUCN Red List",
+        "link": "https://www.iucnredlist.org/species/22679908/115934527",
+        "access_date": "2024-07-17"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "common_name": "Northern Pintail",
+    "scientific_name": "Anas acuta",
+    "family": "Anatidae",
+    "habitat": {
+      "type": "Freshwater and coastal",
+      "description": "Lakes, rivers, marshes, and estuaries",
+      "preferences": [
+        "Shallow waters with abundant vegetation",
+        "Coastal marshes during migration"
+      ]
+    },
+    "characteristics": {
+      "size": "Medium to large",
+      "plumage": "Elegant with a slender neck and long tail, males have a distinctive white stripe down the neck",
+      "behavior": "Migratory, forms large flocks outside breeding season"
+    },
+    "description": "The Northern Pintail is a graceful and elegant duck, easily identifiable by its slender neck and long tail feathers. It is widely distributed across North America, Europe, and Asia, often found in shallow wetlands.",
+    "conservation_status": {
+      "level": "Least Concern",
+      "global_status": "LC",
+      "regional_status": "Stable"
+    },
+    "image_url": "https://example.com/image/northern_pintail.jpg",
+    "references": [
+      {
+        "title": "Waterfowl of North America, Europe, and Asia",
+        "author": "Jane Smith",
+        "year": 2018,
+        "publisher": "Wildlife Publications"
+      },
+      {
+        "title": "BirdLife International",
+        "link": "https://www.birdlife.org/species/factsheet/northern-pintail-anas-acuta",
+        "access_date": "2024-07-20"
+      }
+    ]
+  }
+]

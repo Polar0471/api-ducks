@@ -1,9 +1,11 @@
 import { Router } from "express";
-import { getDuckById, getDucks } from "./controllers/ducks-controllers";
+import { getDuckById, getDucks, postDuck } from "./controllers/ducks-controllers";
 
 const router = Router();
 
 router.get("/ducks", getDucks);
 router.get("/ducks/:id", getDuckById)
+
+router.post("/ducks", postDuck)
 
 export default router;
