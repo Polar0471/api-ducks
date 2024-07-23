@@ -4,6 +4,7 @@ import {
   deleteDuckService,
   getDuckByIdService,
   getDucksService,
+  updateDucksService
 } from "../services/duck-services";
 import { noContent } from "../utils/http-helper";
 
@@ -35,3 +36,10 @@ export const deleteDuck = async (req: Request, res: Response) => {
   const httpResponse = await deleteDuckService(id);
   res.status(httpResponse.statusCode).json(httpResponse.body);
 };
+
+export const updateDuck = async (req: Request, res: Response) => {
+  const id = parseInt(req.params.id)
+  const bodyValue = req.body
+  const httpResponse = await updateDucksService(id, bodyValue)
+  res.status(httpResponse.statusCode).json(httpResponse.body)
+}
