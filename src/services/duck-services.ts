@@ -5,6 +5,7 @@ import {
   findAllDucks,
   findDuckById,
   findDuckByName,
+  updateDuckRepository
 } from "../repositories/ducks-repository";
 import { badRequest, created, noContent, ok } from "../utils/http-helper";
 
@@ -63,6 +64,19 @@ export const createDuckService = async (newDuck: Duck) => {
 export const deleteDuckService = async (id: number) => {
   let response = null 
   await deleteDuck(id)
-  response = ok({message: "deleted"})
+  response = await ok({message: "deleted"})
+  return response
+}
+
+export const updateDucksService = async (id: number, duckToUpdate: Duck) => {
+  const data = await updateDuckRepository(id, duckToUpdate)
+  let response = null
+
+  if (data) {
+    response = await ok(data)
+  } else {
+    response = await badRequest()
+  }
+
   return response
 }

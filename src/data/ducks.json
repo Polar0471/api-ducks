@@ -74,5 +74,44 @@
         "access_date": "2024-07-17"
       }
     ]
+  },
+  {
+    "id": 3,
+    "common_name": "Northern Pintail",
+    "scientific_name": "Anas acuta",
+    "family": "Anatidae",
+    "habitat": {
+      "type": "Freshwater and coastal",
+      "description": "Lakes, rivers, marshes, and estuaries",
+      "preferences": [
+        "Shallow waters with abundant vegetation",
+        "Coastal marshes during migration"
+      ]
+    },
+    "characteristics": {
+      "size": "Medium to large",
+      "plumage": "Elegant with a slender neck and long tail, males have a distinctive white stripe down the neck",
+      "behavior": "Migratory, forms large flocks outside breeding season"
+    },
+    "description": "The Northern Pintail is a graceful and elegant duck, easily identifiable by its slender neck and long tail feathers. It is widely distributed across North America, Europe, and Asia, often found in shallow wetlands.",
+    "conservation_status": {
+      "level": "Least Concern",
+      "global_status": "LC",
+      "regional_status": "Stable"
+    },
+    "image_url": "https://example.com/image/northern_pintail.jpg",
+    "references": [
+      {
+        "title": "Waterfowl of North America, Europe, and Asia",
+        "author": "Jane Smith",
+        "year": 2018,
+        "publisher": "Wildlife Publications"
+      },
+      {
+        "title": "BirdLife International",
+        "link": "https://www.birdlife.org/species/factsheet/northern-pintail-anas-acuta",
+        "access_date": "2024-07-20"
+      }
+    ]
   }
 ]
