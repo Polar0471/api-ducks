@@ -3,6 +3,7 @@ import {
   createDuckService,
   deleteDuckService,
   getDuckByIdService,
+  getDuckNameService,
   getDucksService,
 } from "../services/duck-services";
 import { noContent } from "../utils/http-helper";
@@ -17,6 +18,12 @@ export const getDuckById = async (req: Request, res: Response) => {
   const httpResponse = await getDuckByIdService(id);
   res.status(httpResponse.statusCode).json(httpResponse.body);
 };
+
+export const getDuckName = async (req: Request, res: Response) => {
+  const name = req.params.common_name;
+  const httpResponse = await getDuckNameService(name);
+  res.status(httpResponse.statusCode).json(httpResponse.body)
+}
 
 export const postDuck = async (req: Request, res: Response) => {
   const bodyValue = req.body;

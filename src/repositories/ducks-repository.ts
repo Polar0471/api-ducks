@@ -14,6 +14,13 @@ export const findDuckById = async (id: number): Promise<Duck | undefined> => {
   return duck
 };
 
+export const findDuckByName = async (name: string) => {
+  const data = await fs.readFile("src/data/ducks.json", "utf-8")
+  const ducks: Duck[] = JSON.parse(data)
+  const duck = ducks.find(duck => duck.common_name = name)
+  return duck
+}
+
 export const createDuck = async (newDuck: Duck) => {
   const data = await fs.readFile("src/data/ducks.json", "utf-8")
   const ducks: Duck[] = JSON.parse(data)
